@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+
+html {
+  font-family: 'Titillium Web', sans-serif;
+}
+
+body {
+  overflow: visible !important;
+}
+
+.image {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.center {
+  align-items: center;
+  justify-content: center;
+}
+
+.icon text {
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 13px;
+  fill: white;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.icon rect {
+  fill: none;
+  transform: rotate(45deg) rotateY(0deg) rotateX(0deg) scale(1);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.icon:hover text {
+  fill: #424242;
+}
+
+.icon:hover rect {
+  fill: white;
+  transform: rotate(90deg) rotateY(180deg) rotateX(180deg) scale(1.1);
+}
+
+.side-nav li > a {
+  transition: background-color 0.4s ease-in-out 0s;
+}
+
+.foot-transition li > a {
+  transition: all 0.2s ease-in-out 0s;
+}
+
+.foot-transition li > a:hover {
+  color: white !important;
+}
+
+#contact .row .col p {
+  margin: 0;
+}
+
+#contact .row, #contact .row .col {
+  margin: 6px 0;
+}
+
+#contact .divider {
+  max-width: 600px;
+  margin: 8px auto;
+}
+
+#home-animate * {position: relative;}
+#home-animate h5 {opacity: 0; animation: home-h5 0.8s ease-in-out 0.4s forwards;}
+#home-animate div {width: 5px; margin: 6px; margin-left: 8px; animation: home-div 1.2s ease-in-out 0s forwards;}
+#home-animate h3 {opacity: 0; line-height: 38px; animation: home-h3 0.8s ease-in-out 0.4s forwards;}
+
+@keyframes home-h5 {
+  from {right: 80px; opacity: 0;} to {right: 0; opacity: 1;}
+}
+@keyframes home-div {
+  from {height: 0; opacity: 0;} to {height: 140px; opacity: 1;}
+}
+@keyframes home-h3 {
+  from {left: 80px; opacity: 0;} to {left: 0; opacity: 1;}
+}
+@keyframes gear {
+  from {transform: rotate(0deg);} to {transform: rotate(360deg);}
+}
+
+@media screen and (min-width: 600px) {
+    .contact-col {
+      text-align: right !important;
+    }
+}

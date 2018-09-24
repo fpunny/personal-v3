@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.1/css/materialize.min.css">
+    <link rel="stylesheet" href="main.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+
+  <body>
+    <nav class="navbar-fixed" style="background: transparent; box-shadow: none; position: fixed; transition: all 0.4s ease-in-out 0s;">
+      <div class="nav-wrapper container">
+          <a href="#home" class="left brand-logo" style="height: 100%;">
+            <div class="valign-wrapper" style="height: 100%;">
+            <svg class="icon" viewBox="0 0 30 30" style="width: 44px; height: 100%;">
+              <rect x="5" y="5" width="20" height="20" style="stroke: white; stroke-width: 1.5; transform-origin: center;"/>
+              <text x="7.5" y="19.5">F</text>
+              <text x="15" y="19.5">P</text>
+            </svg>
+            </div>
+          </a>
+        <a data-target="mobile-demo" class="sidenav-trigger button-collapse right"><i class="fa fa-bars" aria-hidden="true" style="font-size: 22px;"></i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a class="modal-trigger" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <ul class="sidenav" id="mobile-demo">
+      <li style="margin: 0 16px; margin-top: 20px;">
+        <h5 style="margin-bottom: 0;">Frederic Pun</h5>
+        <p style="margin: 0; line-height: 22px; margin-bottom: 12px;">2<sup>nd</sup> Year Computer Science Student</p>
+        <div class="divider" style="margin: 6px 0;"></div>
+      </li>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a class="modal-trigger" href="#contact">Contact</a></li>
+      <li style="margin: 0 16px;">
+        <div class="divider" style="margin: 6px 0;"></div>
+      </li>
+    </ul>
+    <header id="home" class="image valign-wrapper scrollspy" style="background-color: black; background-image: url('src/home.jpg'); width: 100%; height: 600px; margin: 0;">
+      <div id="home-animate"class="white-text center" style="display: flex; width: 100%;">
+        <h5 class="right-align">2nd Year Computer<br>Science Student</h5>
+        <div class="white"></div>
+        <h3 class="left-align">Frederic<br>Pun</h3>
+      </div>
+    </header>
+    <section class="row" style="padding: 20px 0;">
+      <div class="container">
+        <h3 class="center" style="margin-bottom: 60px;">Skills &amp; Experience</h3>
+        <div class="col s12 m4 l4 center" style="margin-bottom: 40px;">
+          <object type="image/svg+xml" data="src/soft.svg" style="width: 100%; max-width: 160px; animation: gear 10s linear 0s infinite;"></object>
+          <h5>Software<br>Development</h5>
+        </div>
+        <div class="col s12 m4 l4 center" style="margin-bottom: 40px;">
+          <object type="image/svg+xml" data="src/front.svg" style="width: 100%; max-width: 160px;"></object>
+          <h5>Front-End<br>Web Development</h5>
+        </div>
+        <div class="col s12 m4 l4 center" style="margin-bottom: 40px;">
+          <object type="image/svg+xml" data="src/back.svg" style="width: 100%; max-width: 160px;"></object>
+          <h5>Back-End<br>Web Development</h5>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="row grey lighten-3 scrollspy" style="padding: 20px 0;">
+      <div class="container">
+        <h3 class="center">About Me</h3>
+        <div class="row">
+          <div class="col s12 m12 l5 center">
+            <img class="z-depth-4" width="100%" height="100%" src="src/me.jpg" style="border-radius: 50%; max-width: 390px; max-height: 390px;">
+          </div>
+          <div class="col s12 m12 l7" style="margin-top: 20px;">
+            <h4 class="cyan-text text-darken-1" style="font-size: 28px; margin-bottom: 8px;">A Creative, Motivated &amp; Passionate individual</h4>
+            <p style="font-size: 18px; margin: 0;">I'm a second year Honours, Co-op, Computer Science student pursuing a specialist program in Information Systems at the University of Toronto. Being well versed and familar with various technologies such as Java, SQL/CAML, and HTML/CSS, I am always looking for ways to expand my toolbox of skills.</p>
+            <div class="divider black" style="height: 2px; margin-top: 10px; opacity: 0.1;"></div>
+            <p>Learn more about me and my skills, feel free to contact me.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="work" class="row scrollspy" style="padding: 20px 0;">
+      <div class="container">
+        <h3 class="center">My Work</h3>
+        <p class="center" style="font-size: 18px;">From my experience in hackathons &amp; work, I am able to expose myself to many different technologies, here are some of them...</p>
+        <div style="display: flex; justify-content: center;">
+        <ul class="collapsible popout" data-collapsible="accordion" style="width: 100%;">
+          <li>
+            <div class="collapsible-header"><i class="fa fa-building" aria-hidden="true"></i>Web Support Co-op - Treasury Board Secretariat</div>
+            <div class="collapsible-body">
+              <div class="row">
+                <div class="col s12 m6 l4 center">
+                  <img src="src/tbs.jpg" width="100%" style="max-width: 340px; border-radius: 50%;">
+                </div>
+                <div class="col s12 m6 l8">
+                  <h5 style="font-size: 22px; margin-bottom: 0;">Government of Ontario, Toronto</h5>
+                  <p style="margin-top: 0px;">September 5, 2017 - December 29, 2017</p>
+                  <ul class="browser-default" style="width: 90%;">
+                    <li>A 4 month Co-op student as a Web Support for the Office of Provincial Controllership Division in the Treasury Board Secretariat for the government of Ontario</li>
+                    <li>Assisted in testing administration by creating test cases and communicating with testers for our migration from Sharepoint 2010 to 2013</li>
+                    <li>Developed &amp; maintained gateway homepage and site using javascript, jquery, and HTML/CSS to restyle, update and/or GET data using ajax and CAMLQuery for Sharepoint 2010/13</li>
+                    <li>Volunteered &amp; assisted in events for the workplace community such as onRISK 2017, Unitedway Fundraising, &amp; Division Day for 60+ participants.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="collapsible-header"><i class="fa fa-cloud" aria-hidden="true"></i>Facebook Bot - ECHacks II</div>
+            <div class="collapsible-body">
+              <div class="row">
+                <div class="col s12 m6 l4 center">
+                  <img src="src/EC2.jpg" width="100%" style="max-width: 340px; border-radius: 50%;">
+                </div>
+                <div class="col s12 m6 l8">
+                  <h5 style="font-size: 22px; margin-bottom: 0;">Trent University, Peterborough</h5>
+                  <p style="margin-top: 0px;">November 10, 2017 - November 12, 2017</p>
+                  <ul class="browser-default" style="width: 90%;">
+                    <li>A 36-hour hackathon, where our team of 4 created a smart reminder assistant on Facebook Messenger, resulting in us winning the WolframOne Award for being the top 15 team</li>
+                    <li>Learned &amp; deloyed our server to using Flask on Heroku through Heroku CLI, creating the logic for our bot to process incoming messages, data tracking, interval keeping, and outcoming messages</li>
+                    <li>Integrated &amp; learned a Natural Language Processor, <a href="https://wit.ai" target="_blank">wit.ai</a>, to create a seemless experience for our users by training our ai to understand &amp; sort various different sentences from the users</li>
+                    <li>Created a pitch and website to demo our project to judges to show our product's features, technologies, and protential in the market, resulting in increased interest from the audience</li>
+                    <li><a href="https://devpost.com/software/buddy-bot" target="_blank">Project Source (Devpost)</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="collapsible-header"><i class="fa fa-fire" aria-hidden="true"></i>Fundy - THacks II</div>
+            <div class="collapsible-body">
+              <div class="row">
+                <div class="col s12 m6 l4 center">
+                  <img src="src/THacks.jpg" width="100%" style="max-width: 340px; border-radius: 50%;">
+                </div>
+                <div class="col s12 m6 l8">
+                  <h5 style="font-size: 22px; margin-bottom: 0;">University of Toronto St. George, Toronto</h5>
+                  <p style="margin-top: 0px;">November 4, 2017 - November 5, 2017</p>
+                  <ul class="browser-default" style="width: 90%;">
+                    <li>A 24-hour hackathon, where our team of 4 created a budgetting website which would adjust your spendings according to your trends</li>
+                    <li>Learned &amp; and deployed/created using Materialize and Firebase, allowing our app to have powerful front-end components such as modals and forms, as well as powerful back-end components such as a Tree structured database and google authentication</li>
+                    <li>Demo-ed the project to judges, resulting in praises for being able to create a polished, functional, and pleasing to use site within 24 hours</li>
+                    <li><a href="https://devpost.com/software/bundy" target="_blank">Project Source (Devpost)</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <p class="center" style="margin-top: 0;">For all my projects, check out my resume!</p>
+    </div>
+    </section>
+    <footer class="page-footer blue-grey darken-2">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 m6 l8">
+            <h4 class="white-text" style="margin: 0; margin-bottom: 6px;">Frederic I. K. Pun</h4>
+            <p class="grey-text text-lighten-3 truncate" style="margin: 0;">2nd Year Co-op Computer Science Student</p>
+            <p class="grey-text text-lighten-3" style="margin: 0;">University of Toronto Scarborough</p>
+          </div>
+          <div class="col s12 m6 l4">
+            <h5 class="white-text" style="margin: 0; margin-top: 10px;">Contact</h5>
+            <div class="row">
+              <ul class="foot-transition col" style="margin-top: 6px; width: 110px;">
+                <li><a class="grey-text text-lighten-3" href="#!">
+                  <i class="fa fa-linkedin" aria-hidden="true" style="margin-right: 6px; width: 20px;"></i>LinkedIn
+                </a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">
+                  <i class="fa fa-github" aria-hidden="true" style="margin-right: 6px; width: 20px;"></i>Github
+                </a></li>
+              </ul>
+              <ul class="foot-transition col" style="margin-top: 6px; width: 110px;">
+                <li><a class="grey-text text-lighten-3" href="#!">
+                  <i class="fa fa-envelope" aria-hidden="true" style="margin-right: 7px; width: 20px; margin-left: -1px;"></i>Email
+                </a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">
+                  <i class="fa fa-facebook-official" aria-hidden="true" style="margin-right: 6px; width: 20px;"></i>Facebook
+                </a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright" style="background-color: rgba(0,0,0,0.1);">
+        <div class="container">
+        Created in November 2017
+        <a class="grey-text text-lighten-2 right" href="http://next.materializecss.com" target="_blank">Made with Materialize 1.0.0 alpha</a>
+        </div>
+      </div>
+    </footer>
+    <div id="contact" class="modal bottom-sheet">
+    <div class="modal-content center">
+      <h4 style="margin-bottom: 4px;">Contact Information</h4>
+      <p style="margin-top: 0;">Feel free to reach out &amp; I'll get back as soon as possible!</p>
+      <div class="divider"></div>
+      <div class="row left-align">
+        <div class="col s12 m6 contact-col">
+          <p style="font-weight: bold;">LinkedIn</p>
+          <p>https://www.linkedin.com/in/fredericpun/</p>
+        </div>
+        <div class="col s12 m6">
+          <p style="font-weight: bold;">Github</p>
+          <p>https://github.com/fpunny</p>
+        </div>
+      </div>
+      <div class="row left-align">
+        <div class="col s12 m6 contact-col">
+          <p style="font-weight: bold;">Facebook</p>
+          <p>https://www.facebook.com/fredericpun</p>
+        </div>
+        <div class="col s12 m6">
+          <p style="font-weight: bold;">Email</p>
+          <p>Frederic.pun@gmail.com</p>
+        </div>
+      </div>
+      <div class="divider"></div>
+    </div>
+  </div>
+  </body>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://use.fontawesome.com/360be4578a.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.1/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.sidenav').sidenav();
+      $('.collapsible').collapsible();
+      $('.scrollspy').scrollSpy();
+      $('.modal').modal();
+    });
+
+    $(document).scroll(function() {
+      if($(window).scrollTop() === 0) {
+        $("nav")
+        .css("background-color", "transparent");
+      } else {
+        $("nav")
+        .css("background-color", "rgba(0,0,0,0.6)");
+      }
+    });
+  </script>
+</html>
